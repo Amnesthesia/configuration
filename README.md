@@ -36,3 +36,20 @@ I just needed a way to set up my server without storing passwords in clear text.
 * Prepend dates to filename and allow user to roll back to earlier dates
 * Finish Open Monitoring Distribution configuration
 * Include Jenkins and add jobs to continuously update sites cloned from git repositories
+* Add command-line arguments:
+    * setup.sh rails new username/application\_name [/path] --db="name" --dbuser="user" --dbpassword="password"
+    * setup.sh rails new application\_name [/path/] --user="username" --db="name" --dbuser="user" --dbpassword="password"
+    * setup.sh rails destroy application\_name [/path/]
+    * setup.sh rails destroy username/application\_name
+    * setup.sh wordpress new username/application\_name [/path/] --db="name" --dbuser="user" --dbpassword="password"
+    * setup.sh wordpress new application\_name [/path/] --user="username" --db="name" --dbuser="user" --dbpassword="password"
+    * setup.sh wordpress destroy username/application\_name [/path/]
+    * setup.sh wordpress destroy application\_name [/path/] 
+    * setup.sh user new username --wordpress="app_name" --db="name" --dbuser="user" --dbpassword="password"
+    * setup.sh user new username --rails="app_name" --db="name" --dbuser="user" --dbpassword="password"
+    * setup.sh user new username --wordpress
+    * setup.sh user new username --rails
+    * setup.sh user destroy username
+    * setup.sh user destroy username --truncate (delete all sites and databases -- clean user account)
+    * setup.sh postgresql new database\_user/database\_name
+    * setup.sh postgresql destroy database\_user/database\_name
