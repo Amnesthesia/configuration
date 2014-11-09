@@ -1,0 +1,41 @@
+node default{
+	$web_root = "<%= scope.lookupvar('new_site_web_root') %>"
+	$app_name = "<%= scope.lookupvar('new_site_app_name') %>"
+	
+	class { "nginx": }				# Nginx as web server...
+	class { "puma": } 				# ... with Puma serving up some..
+	class { "capistrano": }		# ..capistrano-spiced...
+  class { "rails": }				# ...rails!
+
+	file { "database.yml":
+        path    => "${web_root}/${app_name}/current/config/database.yml",
+        owner   => $puma::puma_user,
+        group   => $puma::web_user,
+        mode    => '0644',
+        content => template("database.yml.erb"),
+  }~>
+	file { "secrets.yml":
+        path    => "${web_root}/${app_name}/current/config/secrets.yml",
+        owner   => $puma::puma_user,
+        group   => $puma::web_user,
+        mode    => '0644',
+        content => template("secrets.yml.erb"),
+  }
+
+	
+	
+	
+		##
+	### ${app_name} source code should be set up, so let's spawn up the server!
+	##
+        rails::app { '<%= scope.lookupvar('new_site_app_name') %>' :
+                ruby_version => "ruby-2.1.0",
+                #fqdn   =>      'iriri.amnesthesia.com',
+                db      =>      "postgresql",
+                server_name => ['<%= scope.lookupvar('new_site_domain') %>','${app_name}.xyz', "development.<%= scope.lookupvar('new_site_domain') %>"],
+                shared_dirs => ['log','pids','assets','uploads'],
+                uses    => { rmagick => true, imagemagick => true},
+                deploy_using => "capistrano",
+                serve_using => "nginx/puma",
+        }
+}

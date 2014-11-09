@@ -1,0 +1,27 @@
+{
+  "name": "frankcarey-yeoman",
+  "version": "0.1.0",
+  "source": "https://github.com/frankcarey/puppet-yeoman",
+  "author": "frankcarey",
+  "license": "MIT",
+  "summary": "Installs yeoman, yeoman dependencies, generators, and yeoman/bower/grunt projects. Will also build and serve pages during provision.",
+  "description": "UNKNOWN",
+  "project_page": "https://github.com/frankcarey/puppet-yeoman",
+  "dependencies": [
+    {
+      "name": "puppetlabs/vcsrepo",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "038d7af62761b6bf278479e84e05956d",
+    "Modulefile": "57ced296034d50bd7eb83f7cb15152c0",
+    "README": "83c5f3cbb63f10e18f978b61d85d209e",
+    "manifests/init.pp": "d580a2e4ee47d1e097c78e3b5e4dd906",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "tests/init.pp": "4ab38d8c0b2ab0bd3907abd6029acbeb"
+  }
+}

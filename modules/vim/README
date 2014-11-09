@@ -1,0 +1,26 @@
+VIM
+===
+
+Install VIM with Pathogen.
+
+License
+-------
+BSD License
+
+Usage
+-----
+
+    class { "vim": 
+      user => "user",
+      homedir => "/home/user", 
+    } 
+
+    vim::plugin { "https://github.com/scrooloose/nerdtree.git": }
+ 
+
+
+Contact
+-------
+info [at] huskycode.com
+
+for any issues.

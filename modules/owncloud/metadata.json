@@ -1,0 +1,28 @@
+{
+  "name": "ramiel-owncloud",
+  "version": "0.1.0",
+  "source": "https://github.com/ramiel/puppet-owncloud",
+  "author": "Fabrizio Ruggeri @3logic",
+  "license": "Apache License, Version 2.0",
+  "summary": "Owncloud install module",
+  "description": "Make sure owncloud is configured and installed correctly on different environments",
+  "project_page": "https://github.com/ramiel/puppet-owncloud",
+  "dependencies": [
+    {
+      "name": "jfryman/nginx",
+      "version_requirement": ">= 0.0.1"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "7eeeedb3c379e25725a87459b6b2a885",
+    "README": "38c8cd6fa747c7a2bbcb757f7010472f",
+    "manifests/init.pp": "498a80c8aa54dc9ff280e67692312eea",
+    "manifests/params.pp": "4237641adc4571caad789ebb553c96df",
+    "manifests/webserver.pp": "60450f63a228d615c97e81b506975402",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "tests/init.pp": "0156841463953c6b3dc0f34c7f64b8b8"
+  }
+}

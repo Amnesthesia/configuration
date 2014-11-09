@@ -1,0 +1,28 @@
+{
+  "name": "dcoxall-wordpress",
+  "version": "2.0.0",
+  "source": "https://github.com/FreakyDazio/dcoxall-wordpress",
+  "author": "Darren Coxall",
+  "license": "Apache License, Version 2.0",
+  "summary": "Configure PHP-FPM and NGINX for Wordpress sites.",
+  "description": "Quickly set-up a Wordpress site using NGINX and PHP-FPM.",
+  "project_page": "https://github.com/FreakyDazio/dcoxall-wordpress",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "f80bfe1b9d975551ce2b5cb8525570bf",
+    "README.markdown": "118587f88f6c7cdde0043b938305f616",
+    "manifests/init.pp": "52209383413fc190a10268778188195d",
+    "manifests/mysql.pp": "ccd1fab46ee1f9cc51e60e89ae1a618f",
+    "manifests/nginx.pp": "78e8a8595106ce6300426e82a4eb53a5",
+    "manifests/php.pp": "007047a6ae6cd2f0705cce109da8d827",
+    "spec/spec_helper.rb": "978f1291c38334d397ff454d174405a3",
+    "templates/default-site.erb": "709a2d27028c3c40e8e421a01e07644c",
+    "templates/php.ini.erb": "09ddb1b77e8d1e84a16653d7462b5512",
+    "tests/init.pp": "dffce184b8afaad4c4dc4c11c3e77c44"
+  }
+}

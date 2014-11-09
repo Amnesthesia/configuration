@@ -1,0 +1,17 @@
+node default{
+	class { 'postgresql::server': } # Install PostgreSQL
+	postgresql::server::db { "<%= scope.lookupvar('new_site_app_db') %>_production":
+  						user => "<%= scope.lookupvar('new_site_app_db') %>",
+              password => postgresql_password("<%= scope.lookupvar('new_site_app_user') %>",$::databases_<%= scope.lookupvar('new_site_app_name') %>_pw),
+  }
+
+	postgresql::server::db { "<%= scope.lookupvar('new_site_app_db') %>_development":
+  						user => "<%= scope.lookupvar('new_site_app_pw') %>_development",
+              password => postgresql_password("<%= scope.lookupvar('new_site_app_user') %>",$::databases_<%= scope.lookupvar('new_site_app_name') %>_pw),
+  }
+
+	postgresql::server::db { "<%= scope.lookupvar('new_site_app_db') %>_testing":
+  						user => "<%= scope.lookupvar('new_site_app_pw') %>_test",
+              password => postgresql_password("<%= scope.lookupvar('new_site_app_user') %>",$::databases_<%= scope.lookupvar('new_site_app_name') %>_pw),
+  }
+}

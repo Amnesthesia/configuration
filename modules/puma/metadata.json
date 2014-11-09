@@ -1,0 +1,35 @@
+{
+  "name": "deversus-puma",
+  "version": "0.1.9",
+  "author": "Ruy Asan",
+  "summary": "Configure puma servers for Ruby-on-Rails apps",
+  "license": "MIT",
+  "source": "https://github.com/deversus/puppet-puma.git",
+  "project_page": "https://github.com/deversus/puppet-puma",
+  "issues_url": "https://github.com/deversus/puppet-puma/issues",
+  "tags": [
+    "rails",
+    "puma",
+    "ruby",
+    "nginx",
+    "rvm"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.1.0"
+    },
+    {
+      "name": "deversus-upstart",
+      "version_requirement": ">= 0.0.2"
+    }
+  ]
+}

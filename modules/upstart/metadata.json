@@ -1,0 +1,22 @@
+{
+  "name": "deversus-upstart",
+  "version": "0.0.2",
+  "author": "DevOps Team Oasiswork",
+  "summary": "Puppet Upstart module",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/deversus/puppet-upstart.git",
+  "project_page": "",
+  "issues_url": "https://github.com/deversus/puppet-upstart/issues",
+  "description": "This module manages Upstart job configurations.\nForked from https://github.com/bison/puppet-upstart",
+  "types": [
+  
+  ],
+  "checksums": {
+  },
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 0.1.6"
+    }
+  ]
+}

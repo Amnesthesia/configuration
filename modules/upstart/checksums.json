@@ -1,0 +1,20 @@
+{
+  "LICENSE": "7cf54c3edffbdbf63b6417d1805f0040",
+  "README.markdown": "cab210ad8d6ac0a918193545d45e884f",
+  "files/dbus/Upstart.conf.no_user_jobs": "0e7eadb0a62687e1ebb1b35021ca97cf",
+  "files/dbus/Upstart.conf.user_jobs": "2fa998a14a9b8c1a01a3c512ad8fe94f",
+  "files/user_jobs.conf": "94781ee30320960e272fe5fe481ada21",
+  "manifests/config.pp": "3f46b7631704efd0e8a42db3e500eb86",
+  "manifests/init.pp": "d99252dd43557cd4820f7fe46a49875e",
+  "manifests/install.pp": "f52e4c8b9972e2c87a54fcfebada2721",
+  "manifests/job.pp": "cdd042f458db2105f6ad4ce09b55bdb3",
+  "manifests/params.pp": "e9975986ab1f6939c86d90d8b2e56525",
+  "metadata.json": "5adae74aaf0eba7f0c3023beeb6dc35d",
+  "templates/job.erb": "e96ffad3971306e98efe682610e32261",
+  "templates/job_partials/environment.erb": "8d5121eebadcc4a25dd3a6d12bcc06a4",
+  "templates/job_partials/events.erb": "4836ff66d91ad61f5a70406cea6e5235",
+  "templates/job_partials/limits.erb": "c6e7183ed14cedb4fac3b9d811b52e63",
+  "templates/job_partials/metadata.erb": "33fc356a9e8a8aeea1d34a25437499bc",
+  "templates/job_partials/operation.erb": "4be7ac2750249f64c6c55d6aeac7c6fb",
+  "templates/job_partials/scripts.erb": "8fe87b9be1a0e8909921161b8006a6be"
+}

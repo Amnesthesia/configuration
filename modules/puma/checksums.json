@@ -1,0 +1,12 @@
+{
+  "README.md": "ea176ae3933ebeaaca5654b3e41ef93b",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "manifests/app.pp": "197d680a8e46be0e853aa2ee591ebda9",
+  "manifests/init.pp": "c6256461c9970bedb61ec593a9a770f8",
+  "manifests/nginxconfig.pp": "b3f970159e02b4d538aecf637b1bbfae",
+  "manifests/params.pp": "1a1588bde4000ab512a73da564f2670d",
+  "manifests/rvm.pp": "563e24a78a1b45f1410f5c3e416a9c4d",
+  "metadata.json": "5b883a3e67f362c19895680941492790",
+  "templates/app_init_script.erb": "2a2550a0d42f3535fb0f62d7fb698240",
+  "templates/puma.rb.erb": "a40247cfbd236fdefb2e7f96325815ae"
+}

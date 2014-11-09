@@ -1,0 +1,8 @@
+{
+  "README.md": "83577ac8e0adf4070a64c92a8ead43d1",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "manifests/deploytarget.pp": "5eecdb3cc2478f90fa82e87053a7ad5d",
+  "manifests/init.pp": "ed8ff8949bf5d2ac480e810d4a109b5d",
+  "manifests/params.pp": "a109fe9b98de194f80b01cfe8a945cec",
+  "metadata.json": "7e0392b4386fa6c8531ca77ca7466fcb"
+}

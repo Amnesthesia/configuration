@@ -1,0 +1,8 @@
+node default{
+	class { "wordpress":
+  	cache    => false,       # Static asset caching in NGINX (default: false)
+  	user     => '<%= scope.lookupvar('new_site_app_user')%>', 
+  	password => '<%= scope.lookupvar('new_site_app_pw') %>', 
+  	database => '<%= scope.lookupvar('new_site_app_db') %>', 
+	}
+}

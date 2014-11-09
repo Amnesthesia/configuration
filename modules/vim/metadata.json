@@ -1,0 +1,32 @@
+{
+  "author": "huskycode",
+  "source": "https://github.com/huskycode/puppet-huskycode-vim",
+  "version": "0.0.2",
+  "dependencies": [
+    {
+      "version_requirement": ">= 1.1.0",
+      "name": "maestrodev/wget"
+    },
+    {
+      "version_requirement": ">= 0.1.2",
+      "name": "puppetlabs/vcsrepo"
+    }
+  ],
+  "summary": "Install VIM and plugins via pathogen",
+  "description": "Install VIM and plugins via pathogen",
+  "types": [
+
+  ],
+  "checksums": {
+    "tests/init.pp": "bbf0e258abe369a92ee81a1b32203f35",
+    "manifests/init.pp": "016dd33d7e926d7718eaffd1472161c0",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "LICENSE": "011f8e10e76bbce5f7136b17a4eda132",
+    "Modulefile": "1a90299757cc1dd586b4eb89ed500375",
+    "README": "309b6e76147c906ab3b41838e8014873",
+    "manifests/plugin.pp": "7a973ff584dc77df899551a67258bb8d"
+  },
+  "project_page": "https://github.com/huskycode/puppet-huskycode-vim",
+  "license": "BSD License",
+  "name": "huskycode-vim"
+}
