@@ -34,3 +34,5 @@ I just needed a way to set up my server without storing passwords in clear text.
 * Add scripts to remove user / site / database (create manifest and apply, remove again)
 * Automagically create manifests to roll back changes
 * Prepend dates to filename and allow user to roll back to earlier dates
+* Finish Open Monitoring Distribution configuration
+* Include Jenkins and add jobs to continuously update sites cloned from git repositories
